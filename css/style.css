@@ -24,13 +24,31 @@ img{
 .grid-pictures {
   padding: 0 2.5rem;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
-.low-res-images {
+.images {
   border-radius: .5rem;
   width: 100%;
   height: auto;
+}
+
+.photo {
+  border-radius: .5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 700px) {
+  .grid-pictures {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1100px) {
+  .grid-pictures {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

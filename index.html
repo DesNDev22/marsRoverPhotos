@@ -2,10 +2,10 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="Earth Daily Pictures" content="Earth Polychromatic Imaging Camera">
-    	<meta name="keywords" content="daily pictures of earth from the API nasa EPIC">
+    	<meta name="Mars Rovers Pictures" content="Image data gather by NASA's Curiosity, Opportunity, and Spirit rovers on Mars">
+    	<meta name="keywords" content="Image data gather by NASA's Curiosity, Opportunity, and Spirit rovers on Mars">
 
-		<title>Blue Marble Daily Images</title>
+		<title>Mars Rovers' Pictures</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
@@ -13,13 +13,23 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<h1>Blue Marble Daily Images</h1>
+		<h1>Rovers' pictures of Mars (Navigation Cam)</h1>
 		<section class="option">
-			<input type="date" name="" value="">
-			<button type="button" name="button">View Image</button>
+			<p>Choose Rover:</p>
+			<form>
+			  <input type="radio" id="curiosity" name="rover" value="curiosity" checked="true">
+			  <label for="curiosity">Curiosity</label><br>
+			  <input type="radio" id="opportunity" name="rover" value="opportunity">
+			  <label for="opportunity">Opportunity</label><br>
+			  <input type="radio" id="spirit" name="rover" value="spirit">
+			  <label for="spirit">Spirit</label>
+			  <input type="date" id="searchDate" name="" value="">
+			  <label for="searchDate">Publication Date</label>
+			  <button type="button" name="button">View Images</button>
+			</form>
 		</section>
-		<section class="grid-pictures">
 
+		<section class="grid-pictures">
 		</section>
 
 		<script type="text/javascript" src="js/main.js"></script>
